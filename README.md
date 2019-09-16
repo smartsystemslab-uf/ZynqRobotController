@@ -7,7 +7,10 @@ The ZynqRobotController is the current base design used for all robotics project
 
 - An SD card with an 8GB capacity is required.
 - Download latest image from [Google Drive](https://drive.google.com/drive/folders/1dXtW07_h6ewmt4f9UHb0d-MQymvdOmMu?usp=sharing)
-- It is suggested to use Etcher for flashing. [Availble here](https://www.balena.io/etcher/)
+- It is suggested to use Etcher for flashing. [Available here](https://www.balena.io/etcher/)
+- The SD card image is composed of two partitions, boot and rootfs. The boot partition contains an image.ub and BOOT.bin file used for configuring the hardware and booting into Linux. The rootfs partition contains the filesystem for Ubuntu.
+- Changes to the hardware configuration requires both image.ub and BOOT.bin to be updated.
+- Changes to the kernel configuration requires image.ub to be updated.
 
 **Logging In**
 
