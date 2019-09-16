@@ -22,11 +22,12 @@ The Zybo board uses a microUSB port for serial communication with the board. Con
 
 **Connecting to Network**
 
-The easiest method for connecting the board to the internet is via ethernet. However, the onboard networking stack is not that advanced and may not work when connected to a University ethernet port. The best alternative is to connect to a private network (like your home's router).
+The easiest method for connecting the board to the internet is via ethernet. However, the onboard networking stack is not that advanced and may not work when connected to a University ethernet port. The best alternative is to connect to a private network (like your home router's ethernet ports).
 - DHCP should handle the aquisition of an IP address. To determine the Zybo's IP address, enter the `ifconfig` command on the Zybo's terminal. The output ought to look similar to below with the IP address listed as the inet output.
 ```
 eth0: flags=-28605<UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC>  mtu 1500
         inet 10.0.0.139  netmask 255.255.255.0  broadcast 10.0.0.255
 ```
 - You can now ssh to the board. Communicating with the board is usually much better when using SSH vs the serial port (with picocom).
+- If the router is connected to the internet, the Zybo should now be able to connect to the internet for downloading non-programs like ROS. The best way to confirm this is with a successful ping to Google. ```ping google.com```
 
