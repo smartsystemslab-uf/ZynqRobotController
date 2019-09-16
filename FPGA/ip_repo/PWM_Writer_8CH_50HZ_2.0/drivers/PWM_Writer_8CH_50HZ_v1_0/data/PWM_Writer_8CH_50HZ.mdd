@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER PWM_Writer_8CH_50HZ
+	OPTION supported_peripherals = (PWM_Writer_8CH_50HZ);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = PWM_Writer_8CH_50HZ;
+END DRIVER

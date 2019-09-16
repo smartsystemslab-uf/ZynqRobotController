@@ -1,0 +1,193 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Jun 22 19:13:16 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Reader_8CH_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ControllerBD_PWM_Reader_8CH_0_0 (tjlw.systems.org:tjlw:PWM_Reader_8CH:2.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Jun 22 19:09:15 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Writer_8CH_50HZ_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ControllerBD_PWM_Writer_8CH_50HZ_0_0 (tjlw.system.org:tjlw:PWM_Writer_8CH_50HZ:2.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Jun 18 19:43:19 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Reader_8CH_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ControllerBD_PWM_Reader_8CH_0_0 (tjlw.systems.org:tjlw:PWM_Reader_8CH:2.0) from (Rev. 1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Jun 17 19:13:37 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Reader_8CH_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ControllerBD_PWM_Reader_8CH_0_0 from user.org:user:PWM_Reader_8CH:2.0 (Rev. 1) to tjlw.systems.org:tjlw:PWM_Reader_8CH:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'ControllerBD_PWM_Reader_8CH_0_0'.
+
+
+-Upgrade has added interface 'clock' (xilinx.com:signal:clock:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'ControllerBD_PWM_Reader_8CH_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'channel_1_i'
+
+-Upgrade has added port 'channel_2_i'
+
+-Upgrade has added port 'channel_3_i'
+
+-Upgrade has added port 'channel_4_i'
+
+-Upgrade has added port 'channel_5_i'
+
+-Upgrade has added port 'channel_6_i'
+
+-Upgrade has added port 'channel_7_i'
+
+-Upgrade has added port 'channel_8_i'
+
+-Upgrade has added port 'clock'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Jun 17 19:04:19 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Writer_8CH_50HZ_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ControllerBD_PWM_Writer_8CH_50HZ_0_0 (tjlw.system.org:tjlw:PWM_Writer_8CH_50HZ:2.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Jun 17 18:59:47 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ControllerBD_PWM_Writer_8CH_50HZ_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of ControllerBD_PWM_Writer_8CH_50HZ_0_0 from user.org:user:PWM_Writer_8CH_50HZ:2.0 (Rev. 1) to tjlw.system.org:tjlw:PWM_Writer_8CH_50HZ:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'ControllerBD_PWM_Writer_8CH_50HZ_0_0'.
+
+
+-Upgrade has added interface 'clock' (xilinx.com:signal:clock:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'ControllerBD_PWM_Writer_8CH_50HZ_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'channel_1_o'
+
+-Upgrade has added port 'channel_2_o'
+
+-Upgrade has added port 'channel_3_o'
+
+-Upgrade has added port 'channel_4_o'
+
+-Upgrade has added port 'channel_5_o'
+
+-Upgrade has added port 'channel_6_o'
+
+-Upgrade has added port 'channel_7_o'
+
+-Upgrade has added port 'channel_8_o'
+
+-Upgrade has added port 'clock'
+
+

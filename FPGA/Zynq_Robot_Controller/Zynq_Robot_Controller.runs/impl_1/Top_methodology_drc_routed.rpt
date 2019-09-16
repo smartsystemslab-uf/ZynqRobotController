@@ -1,0 +1,325 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Sep 16 16:32:14 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
+| Design       : Top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 57
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                   | 2          |
+| TIMING-6  | Warning  | No common primary clock between related clocks | 1          |
+| TIMING-7  | Warning  | No common node between related clocks          | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell                    | 32         |
+| TIMING-18 | Warning  | Missing input or output delay                  | 20         |
+| TIMING-20 | Warning  | Non-clocked latch                              | 1          |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter0_inferred__0/i_, with 2 or more inputs, drives asynchronous preset/clear pin(s) Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[0]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[1]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[2]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[3]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[4]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/clock_counter_reg[5]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[0]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[10]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[11]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[12]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[13]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[14]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[15]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[16]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[17]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[18]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[19]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[1]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[20]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[21]/CLR, Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[22]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_ControllerBD_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_ControllerBD_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks clk_out1_ControllerBD_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_ControllerBD_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/period_counter_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on uart_rtl_0_rxd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on uart_rtl_1_rxd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on uart_rtl_2_rxd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_0_tri_o[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_0_tri_o[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on channel_1_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on channel_2_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on channel_3_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on channel_4_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on channel_5_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on channel_6_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on channel_7_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on channel_8_o_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on leds_4bits_tri_o[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on leds_4bits_tri_o[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on leds_4bits_tri_o[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on leds_4bits_tri_o[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on uart_rtl_0_txd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on uart_rtl_1_txd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on uart_rtl_2_txd relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/pwm_clock_reg cannot be properly analyzed as its control pin Controller/ControllerBD_i/PWM_Writer_8CH_50HZ_0/U0/Writer/pwm_clock_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

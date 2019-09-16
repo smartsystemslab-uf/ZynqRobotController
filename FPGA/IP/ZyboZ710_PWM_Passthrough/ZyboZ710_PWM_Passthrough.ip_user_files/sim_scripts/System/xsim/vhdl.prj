@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/System/sim/System.vhd" \
+"../../../bd/System/ip/System_vio_0_0/sim/System_vio_0_0.vhd" \
+
+nosort

@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ipshared/ec67/hdl" --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ipshared/70cf/hdl" --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ip/System_processing_system7_0_0" --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ipshared/1b7e/hdl/verilog" --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ipshared/122e/hdl/verilog" --include "../../../../ZyboZ710_PWM_Passthrough.srcs/sources_1/bd/System/ipshared/46fd/hdl" \
+"../../../bd/System/ip/System_processing_system7_0_0/sim/System_processing_system7_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

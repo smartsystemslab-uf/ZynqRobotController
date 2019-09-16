@@ -1,0 +1,57 @@
+/*
+ * Main.c
+ *
+ *  Created on: Jun 18, 2019
+ *      Author: tjlw
+ */
+
+
+#include <stdio.h>
+#include "xil_io.h"
+#define CUSTOM_IP_BASEADDR 0x41200000
+#define REGISTER_1_OFFSET 0x00
+#define REGISTER_2_OFFSET 0x04
+#define REGISTER_3_OFFSET 0x08
+#define REGISTER_4_OFFSET 0x0C
+
+// Function prototypes
+void set_custom_ip_register(int baseaddr, int offset, int value);
+int get_custom_ip_register(int baseaddr, int offset);
+
+
+int main (void){
+	int temp3;
+	int temp4;
+
+	printf("Test Project\n\r");
+
+	temp3 = get_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_3_OFFSET);
+	temp4 = get_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_4_OFFSET);
+
+	printf("Register 3 = 0x%02X\n\r", temp3);
+	printf("Register 4 = 0x%02X\n\r", temp4);
+
+	printf("Writing to third register...");
+	set_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_3_OFFSET, 0xEE);
+	printf("Done\n\r");
+
+	printf("Writing to fourth register...");
+	set_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_4_OFFSET, 0xBB);
+	printf("Done\n\r");
+
+	temp3 = get_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_3_OFFSET);
+	temp4 = get_custom_ip_register(CUSTOM_IP_BASEADDR, REGISTER_4_OFFSET);
+
+	printf("Register 3 = 0x%02X\n\r", temp3);
+	printf("Register 4 = 0x%02X\n\r", temp4);
+	return 0;
+}
+
+void set_custom_ip_register(int baseaddr, int offset, int value) {
+	Xil_Out32(baseaddr + offset, value);
+}
+
+int get_custom_ip_register(int baseaddr, int offset) {
+	int temp = 0;
+	temp = Xil_In32(baseaddr + offset); return (temp);
+}

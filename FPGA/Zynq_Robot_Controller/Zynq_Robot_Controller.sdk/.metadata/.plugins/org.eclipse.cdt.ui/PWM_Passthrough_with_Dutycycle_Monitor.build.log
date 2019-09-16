@@ -1,0 +1,41 @@
+18:51:50 **** Build of configuration Debug for project PWM_Passthrough_with_Dutycycle_Monitor ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/Main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_Passthrough_with_Dutycycle_Monitor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Main.d" -MT"src/Main.o" -o "src/Main.o" "../src/Main.c"
+../src/Main.c: In function 'LEDOutputExample':
+../src/Main.c:91:11: warning: implicit declaration of function 'XGpio_Initialize'; did you mean 'XGpioPs_CfgInitialize'? [-Wimplicit-function-declaration]
+  Status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
+           ^~~~~~~~~~~~~~~~
+           XGpioPs_CfgInitialize
+../src/Main.c:97:2: warning: implicit declaration of function 'XGpio_SetDataDirection'; did you mean 'XGpioPs_SetDirection'? [-Wimplicit-function-declaration]
+  XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x00);
+  ^~~~~~~~~~~~~~~~~~~~~~
+  XGpioPs_SetDirection
+../src/Main.c:102:3: warning: implicit declaration of function 'XGpio_DiscreteWrite'; did you mean 'XGpioPs_Write'? [-Wimplicit-function-declaration]
+   XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
+   ^~~~~~~~~~~~~~~~~~~
+   XGpioPs_Write
+Finished building: ../src/Main.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../PWM_Passthrough_with_Dutycycle_Monitor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: PWM_Passthrough_with_Dutycycle_Monitor.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../PWM_Passthrough_with_Dutycycle_Monitor_bsp/ps7_cortexa9_0/lib -o "PWM_Passthrough_with_Dutycycle_Monitor.elf"  ./src/Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: PWM_Passthrough_with_Dutycycle_Monitor.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size PWM_Passthrough_with_Dutycycle_Monitor.elf  |tee "PWM_Passthrough_with_Dutycycle_Monitor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24084	   1200	  22616	  47900	   bb1c	PWM_Passthrough_with_Dutycycle_Monitor.elf
+Finished building: PWM_Passthrough_with_Dutycycle_Monitor.elf.size
+ 
+
+18:51:52 Build Finished (took 2s.376ms)
+

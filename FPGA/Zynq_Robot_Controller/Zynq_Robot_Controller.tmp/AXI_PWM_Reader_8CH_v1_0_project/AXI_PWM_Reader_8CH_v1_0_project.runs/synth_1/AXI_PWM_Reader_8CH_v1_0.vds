@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 17 16:32:45 2019
+# Process ID: 12846
+# Current directory: /media/sf_Projects/ZynqRobotController/FPGA/Zynq_Robot_Controller/Zynq_Robot_Controller.tmp/AXI_PWM_Reader_8CH_v1_0_project/AXI_PWM_Reader_8CH_v1_0_project.runs/synth_1
+# Command line: vivado -log AXI_PWM_Reader_8CH_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_PWM_Reader_8CH_v1_0.tcl
+# Log file: /media/sf_Projects/ZynqRobotController/FPGA/Zynq_Robot_Controller/Zynq_Robot_Controller.tmp/AXI_PWM_Reader_8CH_v1_0_project/AXI_PWM_Reader_8CH_v1_0_project.runs/synth_1/AXI_PWM_Reader_8CH_v1_0.vds
+# Journal file: /media/sf_Projects/ZynqRobotController/FPGA/Zynq_Robot_Controller/Zynq_Robot_Controller.tmp/AXI_PWM_Reader_8CH_v1_0_project/AXI_PWM_Reader_8CH_v1_0_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/tjlw/.Xilinx/Vivado/Vivado_init.tcl'
+source AXI_PWM_Reader_8CH_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tjlw/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/tjlw/ip_repo/ParallaxPingSensor/ParallaxPingSensor_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top AXI_PWM_Reader_8CH_v1_0 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12913 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1475.102 ; gain = 88.820 ; free physical = 8111 ; free virtual = 11537
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AXI_PWM_Reader_8CH_v1_0' [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0.vhd:62]
+	Parameter freq bound to: 100000000 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'AXI_PWM_Reader_8CH_v1_0_S00_AXI' declared at '/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:5' bound to instance 'AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst' of component 'AXI_PWM_Reader_8CH_v1_0_S00_AXI' [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'AXI_PWM_Reader_8CH_v1_0_S00_AXI' [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:95]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:233]
+INFO: [Synth 8-226] default block is never used [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:363]
+WARNING: [Synth 8-614] signal 'channel_1_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_2_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_3_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_4_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_5_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_6_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_7_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-614] signal 'channel_8_dutycycle' is read in the process but is not in the sensitivity list [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:178]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:229]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:231]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PWM_Reader_8CH_v1_0_S00_AXI' (1#1) [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0_S00_AXI.vhd:95]
+	Parameter freq bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_Reader_8CH' declared at '/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/src/PWM_Reader_8CH.vhd:5' bound to instance 'Reader' of component 'PWM_Reader_8CH' [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'PWM_Reader_8CH' [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/src/PWM_Reader_8CH.vhd:31]
+	Parameter freq bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PWM_Reader_8CH' (2#1) [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/src/PWM_Reader_8CH.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'AXI_PWM_Reader_8CH_v1_0' (3#1) [/media/sf_Projects/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0/hdl/AXI_PWM_Reader_8CH_v1_0.vhd:62]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[22]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[21]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[20]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[19]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[18]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[17]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[16]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[15]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[14]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[13]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[12]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[11]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[10]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[9]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[8]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[7]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[6]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[5]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[4]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WDATA[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1520.852 ; gain = 134.570 ; free physical = 8122 ; free virtual = 11548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1520.852 ; gain = 134.570 ; free physical = 8122 ; free virtual = 11549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1528.855 ; gain = 142.574 ; free physical = 8122 ; free virtual = 11549
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1536.863 ; gain = 150.582 ; free physical = 8077 ; free virtual = 11504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI_PWM_Reader_8CH_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module PWM_Reader_8CH 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awaddr[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awaddr[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awaddr[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awaddr[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[31]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[30]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[29]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[28]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[27]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[26]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[25]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[24]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[23]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[22]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[21]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[20]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[19]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[18]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[17]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[16]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[15]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[14]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[13]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[12]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[11]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[10]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[9]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[8]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[7]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[6]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[5]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[4]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wdata[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design AXI_PWM_Reader_8CH_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_2_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_4_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_6_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_8_dutycycle_o_reg[12] )
+INFO: [Synth 8-3886] merging instance 'Reader/channel_2_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_2_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_4_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_4_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_6_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_6_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_8_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_8_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_2_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_2_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_4_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_4_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_6_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_6_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_8_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_8_dutycycle_o_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_2_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_4_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_6_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_8_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_1_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_3_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_5_dutycycle_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_7_dutycycle_o_reg[12] )
+INFO: [Synth 8-3886] merging instance 'Reader/channel_1_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_1_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_3_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_3_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_5_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_5_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_7_dutycycle_o_reg[13]' (FDRE) to 'Reader/channel_7_dutycycle_o_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_1_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_1_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_3_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_3_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_5_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_5_dutycycle_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Reader/channel_7_dutycycle_o_reg[14]' (FDRE) to 'Reader/channel_7_dutycycle_o_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_1_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_3_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_5_dutycycle_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reader/channel_7_dutycycle_o_reg[15] )
+INFO: [Synth 8-3886] merging instance 'AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1648.207 ; gain = 261.926 ; free physical = 7955 ; free virtual = 11382
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1648.207 ; gain = 261.926 ; free physical = 7955 ; free virtual = 11381
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7952 ; free virtual = 11379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   288|
+|3     |LUT1   |    41|
+|4     |LUT2   |   337|
+|5     |LUT3   |   473|
+|6     |LUT4   |   299|
+|7     |LUT5   |   152|
+|8     |LUT6   |   266|
+|9     |FDRE   |   277|
+|10    |FDSE   |    11|
+|11    |IBUF   |    18|
+|12    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+--------------------------------+------+
+|      |Instance                               |Module                          |Cells |
++------+---------------------------------------+--------------------------------+------+
+|1     |top                                    |                                |  2205|
+|2     |  AXI_PWM_Reader_8CH_v1_0_S00_AXI_inst |AXI_PWM_Reader_8CH_v1_0_S00_AXI |    64|
+|3     |  Reader                               |PWM_Reader_8CH                  |  2080|
++------+---------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7954 ; free virtual = 11381
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.301 ; gain = 274.020 ; free physical = 7956 ; free virtual = 11383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1660.309 ; gain = 274.020 ; free physical = 7966 ; free virtual = 11393
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 288 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AXI_PWM_Reader_8CH_v1_0' is not ideal for floorplanning, since the cellview 'PWM_Reader_8CH' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1765.457 ; gain = 0.000 ; free physical = 7870 ; free virtual = 11296
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:59 . Memory (MB): peak = 1765.457 ; gain = 391.809 ; free physical = 7927 ; free virtual = 11354
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1765.457 ; gain = 0.000 ; free physical = 7927 ; free virtual = 11354
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/sf_Projects/ZynqRobotController/FPGA/Zynq_Robot_Controller/Zynq_Robot_Controller.tmp/AXI_PWM_Reader_8CH_v1_0_project/AXI_PWM_Reader_8CH_v1_0_project.runs/synth_1/AXI_PWM_Reader_8CH_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_PWM_Reader_8CH_v1_0_utilization_synth.rpt -pb AXI_PWM_Reader_8CH_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 16:34:03 2019...

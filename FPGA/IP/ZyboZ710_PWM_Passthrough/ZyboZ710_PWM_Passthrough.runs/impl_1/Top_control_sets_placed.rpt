@@ -1,0 +1,87 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Jun  8 18:11:13 2019
+| Host         : MinuxBox running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    94 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      6 |            1 |
+|     12 |            8 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |           17 |
+| No           | No                    | Yes                    |              38 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              96 |           37 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             144 |           57 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                   Enable Signal                   |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-----------------------------------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  PWM/Writer/clock_counter0_inferred__0/i__n_0 |                                                   |                                              |                1 |              1 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      |                                                   | PWM/Writer/clock_counter0_inferred__0/i__n_0 |                2 |              6 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_8_dutycycle_o[11]_i_1_n_0      |                                              |                6 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_2_dutycycle_o[11]_i_1_n_0      |                                              |                7 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_4_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_7_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_3_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_5_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_6_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_1_dutycycle_o[11]_i_1_n_0      |                                              |                4 |             12 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/sel                                    | PWM/Reader/channel_1_dutycycle_counter0      |                6 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_8_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_8_dutycycle_counter0      |                5 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_7_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_7_dutycycle_counter0      |                6 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_6_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_6_dutycycle_counter0      |                7 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_2_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_2_dutycycle_counter0      |                9 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_4_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_4_dutycycle_counter0      |                6 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_3_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_3_dutycycle_counter0      |                6 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      | PWM/Reader/channel_5_dutycycle_counter[0]_i_2_n_0 | PWM/Reader/channel_5_dutycycle_counter0      |               12 |             18 |
+|  System/System_i/clk_wiz_0/inst/clk_out1      |                                                   |                                              |               16 |             19 |
+|  Writer/pwm_clock                             |                                                   | PWM/Writer/clear                             |                8 |             32 |
++-----------------------------------------------+---------------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

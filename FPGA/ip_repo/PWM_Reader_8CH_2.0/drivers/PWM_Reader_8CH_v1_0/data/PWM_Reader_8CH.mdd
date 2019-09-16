@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER PWM_Reader_8CH
+	OPTION supported_peripherals = (PWM_Reader_8CH);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = PWM_Reader_8CH;
+END DRIVER
