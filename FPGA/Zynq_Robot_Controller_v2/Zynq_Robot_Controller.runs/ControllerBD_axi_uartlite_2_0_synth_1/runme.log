@@ -1,0 +1,24 @@
+
+*** Running vivado
+    with args -log ControllerBD_axi_uartlite_2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ControllerBD_axi_uartlite_2_0.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ControllerBD_axi_uartlite_2_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/sf_Projects-shared/ZynqRobotController/FPGA/ip_repo/PWM_Reader_8CH_2.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/sf_Projects-shared/ZynqRobotController/FPGA/ip_repo/PWM_Writer_8CH_50HZ_2.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/media/sf_Projects-shared/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Writer_8CH_50HZ_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/media/sf_Projects-shared/ZynqRobotController/FPGA/ip_repo/AXI_PWM_Reader_8CH_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/tjlw/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/tjlw/ip_repo/ParallaxPingSensor/ParallaxPingSensor_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ControllerBD_axi_uartlite_2_0, cache-ID = ee9066b6ec4b7245.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 12:58:26 2019...

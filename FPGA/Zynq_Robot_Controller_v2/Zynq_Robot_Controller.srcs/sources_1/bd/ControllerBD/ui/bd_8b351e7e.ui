@@ -1,0 +1,92 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1440 -y 300 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1440 -y 320 -defaultsOSRD
+preplace port leds_4bits -pg 1 -lvl 5 -x 1440 -y 80 -defaultsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 5 -x 1440 -y 390 -defaultsOSRD
+preplace port uart_rtl_1 -pg 1 -lvl 5 -x 1440 -y 710 -defaultsOSRD
+preplace port uart_rtl_2 -pg 1 -lvl 5 -x 1440 -y 550 -defaultsOSRD
+preplace port GPIO_0 -pg 1 -lvl 5 -x 1440 -y 220 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 920 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -10 -y 940 -defaultsOSRD
+preplace port channel_1_i_0 -pg 1 -lvl 0 -x -10 -y 1140 -defaultsOSRD
+preplace port channel_2_i_0 -pg 1 -lvl 0 -x -10 -y 1160 -defaultsOSRD
+preplace port channel_3_i_0 -pg 1 -lvl 0 -x -10 -y 1180 -defaultsOSRD
+preplace port channel_4_i_0 -pg 1 -lvl 0 -x -10 -y 1200 -defaultsOSRD
+preplace port channel_5_i_0 -pg 1 -lvl 0 -x -10 -y 1220 -defaultsOSRD
+preplace port channel_6_i_0 -pg 1 -lvl 0 -x -10 -y 1240 -defaultsOSRD
+preplace port channel_7_i_0 -pg 1 -lvl 0 -x -10 -y 1260 -defaultsOSRD
+preplace port channel_8_i_0 -pg 1 -lvl 0 -x -10 -y 1280 -defaultsOSRD
+preplace port channel_1_o_0 -pg 1 -lvl 5 -x 1440 -y 860 -defaultsOSRD
+preplace port channel_2_o_0 -pg 1 -lvl 5 -x 1440 -y 880 -defaultsOSRD
+preplace port channel_3_o_0 -pg 1 -lvl 5 -x 1440 -y 900 -defaultsOSRD
+preplace port channel_4_o_0 -pg 1 -lvl 5 -x 1440 -y 920 -defaultsOSRD
+preplace port channel_5_o_0 -pg 1 -lvl 5 -x 1440 -y 940 -defaultsOSRD
+preplace port channel_6_o_0 -pg 1 -lvl 5 -x 1440 -y 960 -defaultsOSRD
+preplace port channel_7_o_0 -pg 1 -lvl 5 -x 1440 -y 980 -defaultsOSRD
+preplace port channel_8_o_0 -pg 1 -lvl 5 -x 1440 -y 1000 -defaultsOSRD
+preplace inst PWM_Writer_8CH_50HZ_0 -pg 1 -lvl 4 -x 1250 -y 930 -defaultsOSRD
+preplace inst PWM_Reader_8CH_0 -pg 1 -lvl 4 -x 1250 -y 1210 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1250 -y 80 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 4 -x 1250 -y 220 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 1250 -y 400 -defaultsOSRD
+preplace inst axi_uartlite_1 -pg 1 -lvl 4 -x 1250 -y 720 -defaultsOSRD
+preplace inst axi_uartlite_2 -pg 1 -lvl 4 -x 1250 -y 560 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 830 -y 930 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 450 -y 350 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 830 -y 560 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 450 -y 710 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 130 -y 700 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 240 240 660 240 1030
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 250 460 650
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 2 680 310 1040
+preplace netloc reset_rtl_1 1 0 3 NJ 920 NJ 920 NJ
+preplace netloc sys_clock_1 1 0 3 NJ 940 NJ 940 NJ
+preplace netloc clk_wiz_0_clk_out1 1 3 1 1010 920n
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_1_o 1 4 1 NJ 860
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_2_o 1 4 1 NJ 880
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_3_o 1 4 1 NJ 900
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_4_o 1 4 1 NJ 920
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_5_o 1 4 1 NJ 940
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_6_o 1 4 1 NJ 960
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_7_o 1 4 1 NJ 980
+preplace netloc PWM_Writer_8CH_50HZ_0_channel_8_o 1 4 1 NJ 1000
+preplace netloc channel_1_i_0_1 1 0 4 NJ 1140 NJ 1140 NJ 1140 NJ
+preplace netloc channel_2_i_0_1 1 0 4 NJ 1160 NJ 1160 NJ 1160 NJ
+preplace netloc channel_3_i_0_1 1 0 4 NJ 1180 NJ 1180 NJ 1180 NJ
+preplace netloc channel_4_i_0_1 1 0 4 NJ 1200 NJ 1200 NJ 1200 NJ
+preplace netloc channel_5_i_0_1 1 0 4 NJ 1220 NJ 1220 NJ 1220 NJ
+preplace netloc channel_6_i_0_1 1 0 4 NJ 1240 NJ 1240 NJ 1240 NJ
+preplace netloc channel_7_i_0_1 1 0 4 NJ 1260 NJ 1260 NJ 1260 NJ
+preplace netloc channel_8_i_0_1 1 0 4 NJ 1280 NJ 1280 NJ 1280 NJ
+preplace netloc axi_uartlite_0_interrupt 1 0 5 10 220 NJ 220 NJ 220 990J 480 1410
+preplace netloc axi_uartlite_1_interrupt 1 0 5 30 810 NJ 810 NJ 810 1050J 800 1410
+preplace netloc axi_uartlite_2_interrupt 1 0 5 20 230 NJ 230 NJ 230 1050J 310 1420
+preplace netloc xlconcat_0_dout 1 1 1 230 360n
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 320 NJ 320 NJ
+preplace netloc axi_gpio_1_GPIO 1 4 1 NJ 220
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 1 1020 200n
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 670 360n
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 300 NJ 300 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 990 520n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 1 1050 540n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 980 60n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1000 500n
+preplace netloc axi_uartlite_2_UART 1 4 1 NJ 550
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1010 380n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 980 580n
+preplace netloc axi_uartlite_1_UART 1 4 1 NJ 710
+preplace netloc axi_gpio_0_GPIO 1 4 1 NJ 80
+preplace netloc axi_uartlite_0_UART 1 4 1 NJ 390
+levelinfo -pg 1 -10 130 450 830 1250 1440
+pagesize -pg 1 -db -bbox -sgen -160 0 1600 1380
+"
+}
+{
+   "da_axi4_cnt":"12",
+   "da_board_cnt":"9",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

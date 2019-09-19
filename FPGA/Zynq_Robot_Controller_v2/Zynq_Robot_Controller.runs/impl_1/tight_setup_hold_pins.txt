@@ -1,0 +1,32 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[24]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[27]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[16]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[3]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[8]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[5]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_7_dutycycle_o_reg[1]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[1]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[21]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[10]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[2]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                      Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_7_dutycycle_o_reg[10]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[25]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[17]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_3_dutycycle_o_reg[4]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[6]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[0]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_2_dutycycle_o_reg[3]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_3_dutycycle_o_reg[3]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_3_dutycycle_o_reg[2]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_3_dutycycle_o_reg[9]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |clk_out1_ControllerBD_clk_wiz_0_0 |                       Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/Reader/channel_3_dutycycle_o_reg[0]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[18]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[4]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[26]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[11]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 |  Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[7]/D|
+| clk_out1_ControllerBD_clk_wiz_0_0 |               clk_fpga_0 | Controller/ControllerBD_i/PWM_Reader_8CH_0/U0/PWM_Reader_8CH_v2_0_PWM_Reader_AXI_inst/axi_rdata_reg[23]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
