@@ -13,7 +13,9 @@
 | 			 						| sda 					| Inout 		| MIO-13					| JF			|
 | UART 0 						| rx 						| Input 		| MIO-14					| JF			|
 | 			 						| tx 						| Output 		| MIO-15					| JF			|
-| <b>PL IP</b>			| 							| 					| 								| 				|
+
+| PL Controllers		| Signal				| In/Out		| Assigned Pin		| PMOD		|
+| ----------------- | ------------- | --------- | --------------- |-------- |
 | LED GPIO 					| led_0					| Output		| M14 						| -				|
 | 			 						| led_1					| Output		| M15 						| -				|
 | 			 						| led_2					| Output		| G14 						| -				|
