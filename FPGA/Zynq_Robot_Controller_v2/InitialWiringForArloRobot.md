@@ -1,4 +1,4 @@
-**Initial Wiring for Arlo Robot
+##Initial Wiring for Arlo Robot
 | Controllers				| Signal				| In/Out		| Assigned Pin		| PMOD		| External Component		| Pin 		| Comments |
 | ----------------- | ------------- | --------- | --------------- |-------- | --------------------- | ------- | -------- |
 | UARTLite 1 				| rx 						| Input 		| MIO-14					| JF			| Motor Controller			| CH2			| Also requires a GND connection |
