@@ -50,7 +50,7 @@
 | 			 						| channel_8_o		| Output		| U12 						| JC			|
 
 
-## Wiring for Arlo Robot
+## Targeted Wiring for Arlo Robot
 | Controllers				| Signal				| In/Out		| Assigned Pin		| PMOD		| External Component		| Pin 		| Comments |
 | ----------------- | ------------- | --------- | --------------- |-------- | --------------------- | ------- | -------- |
 | I2C 0 						| scl 					| Inout 		| MIO-10					| JF			| MPU9250								| scl			| Also requires 3.3V and GND connection |
