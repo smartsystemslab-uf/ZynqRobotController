@@ -4,8 +4,8 @@
 <p> <img src="https://github.com/smartsystemslab-uf/ZynqRobotController/blob/master/FPGA/Zynq_Robot_Controller_v2/ZynqRobotControllerv2%20Base%20Design.png?raw=True"/> </p>
 
 ## Toolchain
--Xilinx Vivado 2019.2
--Xilinx Petalinux Tools 2019.1
+- Xilinx Vivado 2019.2
+- Xilinx Petalinux Tools 2019.1
 
 ## Pinouts
 
