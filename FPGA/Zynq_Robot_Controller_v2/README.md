@@ -1,9 +1,13 @@
 
-## Zynq Robot Controller v2
+# Zynq Robot Controller v2
 
 <p> <img src="https://github.com/smartsystemslab-uf/ZynqRobotController/blob/master/FPGA/Zynq_Robot_Controller_v2/ZynqRobotControllerv2%20Base%20Design.png?raw=True"/> </p>
 
-# Pinouts
+## Toolchain
+-Xilinx Vivado 2019.2
+-Xilinx Petalinux Tools 2019.1
+
+## Pinouts
 
 | PS Controllers		| Signal				| In/Out		| Assigned Pin		| PMOD		|
 | ----------------- | ------------- | --------- | --------------- |-------- |
@@ -46,7 +50,7 @@
 | 			 						| channel_8_o		| Output		| U12 						| JC			|
 
 
-# Wiring for Arlo Robot
+## Wiring for Arlo Robot
 | Controllers				| Signal				| In/Out		| Assigned Pin		| PMOD		| External Component		| Pin 		| Comments |
 | ----------------- | ------------- | --------- | --------------- |-------- | --------------------- | ------- | -------- |
 | I2C 0 						| scl 					| Inout 		| MIO-10					| JF			| MPU9250								| scl			| Also requires 3.3V and GND connection |
@@ -55,7 +59,7 @@
 | 			 						| tx 						| Output 		| MIO-15					| JF			|												| CH1			|						|
 | GPIO  						| gpio_0				| Output		| T17 						| JE			| Featherwing Relay			|	signal	| Also requires 3.3V and GND connection |
 
-# Wiring for Multi-Copter
+## Wiring for Multi-Copter
 | Controllers				| Signal				| In/Out		| Assigned Pin		| PMOD		| External Component		| Pin 			| Comments |
 | ----------------- | ------------- | --------- | --------------- |-------- | --------------------- | ------- 	| -------- |
 | I2C 0 						| scl 					| Inout 		| MIO-10					| JF			| MPU9250								| scl				| Also requires 3.3V and GND connection |
