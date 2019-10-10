@@ -58,7 +58,7 @@ One of the primary device drivers used for communicating with the hardware IP me
 More complex IP require more complex drivers and allow more complex behaviors. Another choice is to use a Linux kernel driver to handle the interaction with memory for a specific <b> type </b> of device. One common application of this is with hardware IP or devices that implement communication protocols. Communication protocols like UART or I2C still require reading/writing to memory registers, but it is much more convenient to use a specific driver so that the user doesn't have to concern themselves with determining what registers to read/write what data to. In our system, we have implemented a number of UART controllers (See specific revisions for more controllers made available through the processing system).
 
 - <b> /dev/UL </b> -
-The UARTLite IP implements a serial port with a static baud rate and is made available to Linux as /dev/UL<DeviceID> with the Xilinx UARTLite kernel driver.
+The UARTLite IP implements a serial port with a static baud rate and is made available to Linux as /dev/UL\<DeviceID\> with the Xilinx UARTLite kernel driver.
 
 
 
