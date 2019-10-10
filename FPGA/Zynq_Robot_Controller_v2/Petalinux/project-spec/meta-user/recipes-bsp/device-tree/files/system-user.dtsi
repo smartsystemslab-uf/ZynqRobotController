@@ -1,0 +1,41 @@
+/include/ "system-conf.dtsi"
+
+/ {
+	model = "Zynq Zybo Z7 Development Board";
+	compatible = "digilent,zynq-zyboz7", "xlnx,zynq-7000";
+
+	chosen {
+		bootargs = "console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio root=/dev/mmcblk0p2 rw rootwait";
+	};
+
+	usb_phy0: usb_phy@0 {
+		compatible = "ulpi-phy";
+		#phy-cells = <0>;
+		reg = <0xe0002000 0x1000>;
+		view-port = <0x0170>;
+		drv-vbus;
+	};
+
+
+};
+
+&usb0 {	
+	dr_mode = "host";
+	usb-phy = <&usb_phy0>;
+};
+
+&PWM_Reader_8CH_0 {
+    compatible = "generic-uio";
+};
+
+&PWM_Writer_8CH_50HZ_0 {
+    compatible = "generic-uio";
+};
+
+&axi_gpio_0 {
+    compatible = "generic-uio";
+};
+
+&axi_gpio_1 {
+    compatible = "generic-uio";
+};
