@@ -55,12 +55,17 @@ Using /dev/mem is usually a bad idea as any mistakes could potentially affect th
 - <b> /dev/uio </b> -
 One of the primary device drivers used for communicating with the hardware IP memory in the ZynqRobotController is the generic UIO (Userspace I/O) driver available with the Linux kernel. This driver allocates a separate file descriptor for each hardware device that is configured for interacting with the UIO driver to read/write to it's memory registers. Each fd contains only the registers for a single hardware IP. This fd is accessible by non-root users and is the simplest way to directly access specific hardware registers. Although, this is a very simple driver that just reads/writes to memory.
 
-More complex IP require more complex drivers and allow more complex behaviors. Another choice is to use a Linux kernel driver to handle the interaction with memory for a specific <b> type </b> of device. One common application of this is with hardware IP or devices that implement communication protocols. Communication protocols like UART or I2C still require reading/writing to memory registers, but it is much more convenient to use a specific driver so that the user doesn't have to concern themselves with determining what registers to read/write what data to. In our system, we have implemented a number of UART controllers (See specific revisions for more controllers made available through the processing system).
+More complex IP require more complex drivers and allow more complex behaviors. Another choice is to use a Linux kernel driver to handle the interaction with memory for a specific <b> type </b> of device. One common application of this is with hardware IP or devices that implement communication protocols. Communication protocols like UART or I2C still require reading/writing to memory registers, but it is much more convenient to use a specific driver so that the user doesn't have to concern themselves with determining what registers to read/write what data to.
+
+There are numerous UART ports in our system, in fact you have already interacted with one of these when opening a serial connection to the Zybo board to see a terminal. Since the ZynqRobotController makes use of of the Zybo's onboard CPU as well as FPGA, the controllers for each UART port can be located either in the processing system or in the hardware. UARTs made available from the processing system are available in Linux as:
+
+- <b> /dev/PS </b> -
+The UART controllers in the processing system implement a serial port with a dynamic baud rate and is made available to Linux as /dev/PS\<DeviceID\> with the Xilinx UARTLite kernel driver.
+
+If we need more UART ports than what the processing system has (only two, so we definitely need more), we can use the FPGA to make some more. THe ZynqRobotController uses a UARTLite IP that is easy to use.
 
 - <b> /dev/UL </b> -
 The UARTLite IP implements a serial port with a static baud rate and is made available to Linux as /dev/UL\<DeviceID\> with the Xilinx UARTLite kernel driver.
-
-
 
 
 
