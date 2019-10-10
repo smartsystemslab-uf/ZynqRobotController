@@ -17,6 +17,7 @@
 | 			 						| sda 					| Inout 		| MIO-13					| JF			|
 | UART 0 						| rx 						| Input 		| MIO-14					| JF			|
 | 			 						| tx 						| Output 		| MIO-15					| JF			|
+| UART 1 						| rx,tx 				| In/Out 		| MicroUSB port		| - 			|
 
 | PL Controllers		| Signal				| In/Out		| Assigned Pin		| PMOD		|
 | ----------------- | ------------- | --------- | --------------- |-------- |

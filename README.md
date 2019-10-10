@@ -60,9 +60,9 @@ More complex IP require more complex drivers and allow more complex behaviors. A
 There are numerous UART ports in our system, in fact you have already interacted with one of these when opening a serial connection to the Zybo board to see a terminal. Since the ZynqRobotController makes use of of the Zybo's onboard CPU as well as FPGA, the controllers for each UART port can be located either in the processing system or in the hardware. UARTs made available from the processing system are available in Linux as:
 
 - <b> /dev/PS </b> -
-The UART controllers in the processing system implement a serial port with a dynamic baud rate and is made available to Linux as /dev/PS\<DeviceID\> with the Xilinx UARTLite kernel driver.
+The UART controllers in the processing system implement a serial port with a dynamic baud rate and is made available to Linux as /dev/PS\<DeviceID\> with the Xilinx UARTLite kernel driver. <b>NOTE: /dev/PS0 refers to the UART port attached to the MicroUSB port.</b>
 
-If we need more UART ports than what the processing system has (only two, so we definitely need more), we can use the FPGA to make some more. THe ZynqRobotController uses a UARTLite IP that is easy to use.
+If we need more UART ports than what the processing system has (only two, so we definitely need more), we can use the FPGA to make some more. The ZynqRobotController uses a UARTLite IP that is easy to use.
 
 - <b> /dev/UL </b> -
 The UARTLite IP implements a serial port with a static baud rate and is made available to Linux as /dev/UL\<DeviceID\> with the Xilinx UARTLite kernel driver.
