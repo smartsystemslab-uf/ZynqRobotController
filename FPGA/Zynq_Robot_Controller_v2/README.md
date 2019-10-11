@@ -7,7 +7,8 @@
 - Xilinx Vivado 2019.2
 - Xilinx Petalinux Tools 2019.1
 
-## Pinouts
+## Pinouts for ZyboZ7-10
+[See ZyboZ7 Reference Manual - PMOD Pins](https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/reference-manual#pmod_ports)
 
 | PS Controllers		| Signal				| In/Out		| Assigned Pin		| PMOD		|
 | ----------------- | ------------- | --------- | --------------- |-------- |
