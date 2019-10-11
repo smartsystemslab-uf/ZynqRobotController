@@ -23,11 +23,11 @@ int main()
 	uint16_t *pwm_in_registers;
 	uint16_t *pwm_out_registers;
 
-  int mem_fd = open("/dev/mem", O_RDWR|O_SYNC|O_CLOEXEC);
-  if (mem_fd == -1) {
-    printf("Unable to open /dev/mem");
+	int mem_fd = open("/dev/mem", O_RDWR|O_SYNC|O_CLOEXEC);
+	if (mem_fd == -1) {
+		printf("Unable to open /dev/mem");
 		return 0;
-  }
+	}
 
 	// Memory mapped blocks
 	pwm_in_registers = (uint16_t*) mmap(0, 0x1000, PROT_READ|PROT_WRITE, MAP_SHARED, mem_fd, XPAR_PWM_READER_8CH_0_PWM_READER_AXI_BASEADDR);
@@ -54,7 +54,7 @@ int main()
 		printf("Channel 8: %u\r\n", (unsigned int) pwm_in_registers[6]);
 	}
 
-  close(mem_fd);
+	close(mem_fd);
 
 	return 0;
 }

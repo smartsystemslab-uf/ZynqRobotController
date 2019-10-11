@@ -16,7 +16,7 @@ int main()
 
 	int led_fd = open("/dev/uio2", O_RDWR|O_SYNC|O_CLOEXEC);
 	if (led_fd == -1) {
-	  printf("Unable to open /dev/uio2");
+		printf("Unable to open /dev/uio2");
 		return 0;
 	}
 
@@ -39,7 +39,7 @@ int main()
 		usleep(delay);
 	}
 
-  close(led_fd);
+	close(led_fd);
 
 	return 0;
 }
