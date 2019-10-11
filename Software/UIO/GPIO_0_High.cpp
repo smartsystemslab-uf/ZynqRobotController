@@ -14,21 +14,22 @@
 
 int main()
 {
-		uint8_t* gpio_registers; // Only 2 GPIO ports, thus only lower 2 bits are used.
+	uint8_t* gpio_registers; // Only 2 GPIO ports, thus only lower 2 bits are used.
 
-    int gpio_fd = open("/dev/uio3", O_RDWR|O_SYNC|O_CLOEXEC);
-    if (gpio_fd == -1) {
-        printf("Unable to open /dev/uio3\n");
-    }
-
-		// Memory mapped blocks
-		gpio_registers = (uint8_t*) mmap(0, 0x1000, PROT_READ|PROT_WRITE, MAP_SHARED, gpio_fd, 0x0);
-
-		// Set gpio 0 to high
-		printf("Setting GPIO 0 to HIGH\n");
-		gpio_registers[0] = 0x1; // 0x1 = b'0001' = NC, NC, GPIO 1: low, GPIO 0: high
-
-    close(gpio_fd);
-
+  int gpio_fd = open("/dev/uio3", O_RDWR|O_SYNC|O_CLOEXEC);
+  if (gpio_fd == -1) {
+    printf("Unable to open /dev/uio3\n");
 		return 0;
+  }
+
+	// Memory mapped blocks
+	gpio_registers = (uint8_t*) mmap(0, 0x1000, PROT_READ|PROT_WRITE, MAP_SHARED, gpio_fd, 0x0);
+
+	// Set gpio 0 to high
+	printf("Setting GPIO 0 to HIGH\n");
+	gpio_registers[0] = 0x1; // 0x1 = b'0001' = NC, NC, GPIO 1: low, GPIO 0: high
+
+  close(gpio_fd);
+
+	return 0;
 }
