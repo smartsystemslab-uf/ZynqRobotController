@@ -1,3 +1,6 @@
+# Tests UART ports available with the ZynqRobotController v2
+
+# Requires pyserial
 import serial
 
 
