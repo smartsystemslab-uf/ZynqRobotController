@@ -8,7 +8,7 @@ The ZynqRobotController is the current base design used for all robotics project
 
 Current revision*
 
-Prebuilt Images with Ubuntu 18.04: [Google Drive](https://drive.google.com/drive/folders/1dXtW07_h6ewmt4f9UHb0d-MQymvdOmMu?usp=sharing).
+Prebuilt Images with a fresh Ubuntu 18.04 (will need to be updated/upgraded): [Google Drive](https://drive.google.com/drive/folders/1dXtW07_h6ewmt4f9UHb0d-MQymvdOmMu?usp=sharing).
 
 ## Getting Started
 
