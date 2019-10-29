@@ -75,16 +75,8 @@ In an effort to streamline setup of an SoC control system for many of the robot 
 
 **Arlo Robot**
 
-The Arlo Robot has been used for a number of projects in the Smart Systems Lab. Most recently, exploring autonomous navigation has been a primary focus with this platform.
-
-
 **Multi-Copter**
-
-
-
 
 **Ceiling Cameras**
 
-The ceiling camera target is intended for research with the DISCMAHN navigation system.
-
-More information TBD.
+More information TBA.
