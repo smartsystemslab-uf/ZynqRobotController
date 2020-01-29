@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Initializing GPS..."
+
+
+# Set the GPS baudrate to max (115200)
+echo -e "\$PMTK251,115200*1F\r\n" > /dev/ttyPS4
+
+# Set the position fix rate to max (5Hz)
+echo -e "\$PMTK300,200,0,0,0,0*2F\r\n" > /dev/ttyPS4
+
+# Set the echo update rate to max (10Hz)
+echo -e "\$PMTK220,100*2F\r\n" > /dev/ttyPS4
+
+
+echo "DONE.\r\n"
+

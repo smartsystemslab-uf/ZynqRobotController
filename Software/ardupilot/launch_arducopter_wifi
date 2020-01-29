@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/home/ubuntu/ardupilot/usr/bin/arducopter -A /dev/ttyPS0 -B /dev/ttyPS4 -C tcp:192.168.1.100:1243 -D /dev/ttyUL3
