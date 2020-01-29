@@ -25,9 +25,9 @@ int main()
 	// Memory mapped blocks
 	gpio_registers = (uint8_t*) mmap(0, 0x1000, PROT_READ|PROT_WRITE, MAP_SHARED, gpio_fd, 0x0);
 
-	// Set gpio 0 to high
+	// Set gpio 0 to low
 	printf("Setting GPIO 0 to LOW\n");
-	gpio_registers[0] = 0x0; // 0x1 = b'0001' = NC, NC, GPIO 1: low, GPIO 0: low
+	gpio_registers[0] = 0x0; // 0x0 = b'0000' = NC, NC, GPIO 1: low, GPIO 0: low
 
 	close(gpio_fd);
 

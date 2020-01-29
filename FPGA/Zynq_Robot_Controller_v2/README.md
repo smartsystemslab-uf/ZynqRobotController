@@ -66,7 +66,7 @@
 | 			 						| sda 					| Inout 		| MIO-11					| JF			|												| sda 		|					 |
 | UART 0 						| rx 						| Input 		| MIO-14					| JF			| Motor Controller			| CH2			| Also requires a GND connection |
 | 			 						| tx 						| Output 		| MIO-15					| JF			|												| CH1			|						|
-| GPIO  						| gpio_0				| Output		| T17 						| JE			| Featherwing Relay			|	signal	| Also requires 3.3V and GND connection |
+| GPIO  						| gpio_0				| Output		| Y17 						| JE			| Featherwing Relay			|	signal	| Also requires 3.3V and GND connection |
 
 ## Wiring for Multi-Copter
 | Controllers				| Signal				| In/Out		| Assigned Pin		| PMOD		| External Component		| Pin 			| Comments |
