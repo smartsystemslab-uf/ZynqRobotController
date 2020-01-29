@@ -94,15 +94,15 @@
 
 ## Memory Registers (32 bit)
 
-### LED GPIO
+### GPIO
 | Start Address | (31 downto 2) | (1)    | (0)    |
 | ------------- | ------------- | ------ | ------ |
-| 0x4120_0000   | Not used      | gpio_1 | gpio_0 |
+| 0x4121_0000   | Not used      | gpio_1 | gpio_0 |
 
-### GPIO
+### LED GPIO
 | Start Address | (31 downto 4) | (3)   | (2)   | (1)   | (0)   |
 | ------------- | ------------- | ----- | ----- | ----- | ----- |
-| 0x4121_0000   | Not used      | led_3 | led_2 | led_1 | led_0 |
+| 0x4120_0000   | Not used      | led_3 | led_2 | led_1 | led_0 |
 
 ### PWM Reader
 | Start Address | (31 downto 16) | (15 downto 0) |
